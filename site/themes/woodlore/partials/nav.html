@@ -1,0 +1,50 @@
+<a name="top"></a>
+<!-- nav -->
+<nav class="navbar navbar-woodlore navbar-expand-lg navbar-light bg-white navbar-redwood">
+    <div class="container">
+	        <a class="navbar-brand" href="/">
+                {{ assets:woodlorelogo }}
+
+
+                    <picture>
+                        <source srcset="{{ glide:url q="75" fm="webp" w="" h="" }}" alt="Woodlore International Inc." type="image/webp">
+                        <source srcset="{{ glide:url q="75" fm="jpg" w="" h="" }}" alt="Woodlore International Inc." type="image/jpg">
+                        <img src="{{ glide:url q="75" fm="jpg" w="" h="" }}"  alt="Woodlore International Inc.">
+                    </picture>
+
+
+                    <!--<img src="{{ glide:url q="75" fm="jpg" }}" alt="Woodlore International Inc.">-->
+
+
+                {{ /assets:woodlorelogo }}
+            </a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+	  	</button>
+     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                {{ nav from="/" hide_from_nav:isnt="true" max_depth="2" include_home="true" scope="tag" }}
+                    {{ if !children }}
+                        <li class="nav-item{{ if is_current }} active{{ endif }}"{{ if id === "c549ddad-d9e9-4e3c-81a3-f004d71ab061" }}style="border-right:none;"{{ /if }}>
+                          <a {{ if id == "c549ddad-d9e9-4e3c-81a3-f004d71ab061" }}class="nav-link brochure btn-md btn-primary" style="color:#fff;"{{ /if }} class="nav-link" href="{{ url }}">{{ title }}</a>
+                        </li>
+                    {{ else }}
+                        <li class="nav-item dropdown{{ if is_current || is_parent }} active {{ endif }}"{{ if id === "8696d7b6-641c-48bc-86d0-b15187d5112c"}}style="border-right:none;"{{ /if }}>
+                            <a {{ if id == "8696d7b6-641c-48bc-86d0-b15187d5112c" || id== "d8f4a89a-fe62-42ac-a168-619eba594162" }}href="{{ url }}" {{ /if }} class="nav-link dropdown-toggle" href="#">{{ title }}</a>
+                        <!--<li class="nav-item dropdown{{ if is_current || is_parent }} active {{ endif }}">
+                            <a href="{{ url }}" class="nav-link dropdown-toggle" >{{ title }}</a>-->
+                            <!--<a href="{{ url }}" class="nav-link dropdown-toggle" id="navbarDropdown{{ id }}" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ title }}</a>-->
+                            <ul class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown{{ id }}">
+                                {{ children }}
+                                	<li{{ if is_current or is_parent }} class="active"{{ /if }}><a class="dropdown-item" href="{{ url }}">{{ title }}</a></li>
+                                    <div class="dropdown-divider"></div>
+                                {{ /children }}
+                            </ul>
+                        </li>
+                    {{ endif }}
+                {{ /nav }}
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--end of nav-->

@@ -1,0 +1,15 @@
+title: home-page-slider
+order: number
+fieldset: home_page_slider
+template: home-page
+columns:
+  - title
+  - slug
+  - image_title
+  - image_url
+  - slider_number
+  - row_classes
+  - header
+  - header_col_classes
+  - blurb
+  - blurb_col_classes

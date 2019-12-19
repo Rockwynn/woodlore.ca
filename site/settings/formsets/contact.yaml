@@ -1,0 +1,24 @@
+title: contact
+honeypot: state
+fields:
+  name:
+    display: Name
+    validate: required|min:2
+  email:
+    display: Email
+    validate: required|email
+  phone:
+    display: Phone
+  comment:
+    display: Comment
+columns:
+  - name
+  - email
+  - phone
+  - comment
+email:
+  -
+    to: info@woodlore.ca
+    from: info@woodlore.ca
+    reply_to: '{{email}}'
+    subject: 'Woodlore Contact Form Submission'

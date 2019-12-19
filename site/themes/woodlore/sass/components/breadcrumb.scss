@@ -1,0 +1,22 @@
+.breadcrumb {
+    line-height: 1.9rem;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-right: 0.5rem;
+    padding-bottom: 1rem;
+    padding-left: 1.5rem;
+}
+.breadcrumb-phone {
+    text-align: right;
+}
+a.breadcrumb-phone-number {
+    margin-top: 1rem;
+    display: block;
+    font-size: 1.5em;
+    white-space: nowrap;
+    padding-bottom: 1rem;
+}
+a.breadcrumb-phone-number:hover {
+    color: $color_orange;
+}

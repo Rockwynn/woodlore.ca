@@ -1,0 +1,23 @@
+<section class="regular">
+	<div class="container-fluid centered">
+		<div class="block">
+			<h4 class="bold dgreen">{{ sub-title }}</h4>
+			<p>{{ top-caption }}</p>
+		</div>
+		<hr>
+		<div class="row">
+		    <div class="card-deck">
+				{{ collection:assembly }}
+			        <div class="card">
+						<a class="example-image-link" href="{{ photo }}" width="552" height="552" fit="crop" data-lightbox="example-set" data-title="{{ image_title }} - Click on right or left half of image to navigate.">
+					    	<img class="example-image card-img-top" src="{{ glide:photo q="75" fm="jpg" }}" width="270" height="150" fit="crop" alt="{{ image_title }}" />
+						</a>
+				        <div class="card-block">
+				            <h5 class="bold card-title dgreen">{{ image_title }}</h5>
+				        </div>
+			        </div>
+			    {{ /collection:assembly }}
+		    </div>
+		</div>
+	</div>
+</section>

@@ -1,0 +1,3 @@
+stache_always_update: false
+static_caching_exclude:
+  - /contact

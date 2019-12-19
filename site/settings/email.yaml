@@ -1,0 +1,3 @@
+driver: sendmail
+from: info@woodlore.ca
+from_name: Administrator

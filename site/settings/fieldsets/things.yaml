@@ -1,0 +1,28 @@
+title: Things
+create_title: 'Add New Thing'
+hide: true
+sections:
+  main:
+    display: Main
+    fields:
+      title:
+        type: text
+        display: Title
+        width: 66
+        localizable: true
+      slug:
+        type: text
+        width: 33
+      image_title:
+        type: text
+        display: 'Image Title'
+      photo:
+        display: 'Image URL'
+        type: text
+      blurb:
+        type: text
+        display: blurb
+      link:
+        type: text
+        display: link
+taxonomies: true

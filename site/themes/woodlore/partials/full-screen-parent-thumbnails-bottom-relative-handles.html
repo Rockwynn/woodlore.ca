@@ -1,0 +1,47 @@
+<div style="width: 100%; height: 500px; margin-top: 1em; margin-right: auto; margin-bottom: 50px; margin-left: auto;">
+    <!-- Carousel Start -->
+    <div id="full-screen-thumb-btm-rel" class="carousel slide bs4-carousel bs4-full-screen-parent bs4-indicators-thumb swipe_x bs4-easeOutSine thumb_scroll_x" data-ride="carousel" data-pause="hover" data-duration="1500" data-interval="5000" data-keyboard="false" data-wrap="true" data-thumb="bottom">
+        <!-- Indicators Start -->
+        <ol class="carousel-indicators carousel-thumb-border" data-bgcolor="#f6f6f6" data-color="#ffffff">
+            {{ assets:handles }}
+                <!-- Indicators 1 Start -->
+                <li data-target="#full-screen-thumb-btm-rel" data-slide-to="{{ zero_index }}" {{ if first }}class="active"{{/if}}">
+                    <!-- Image -->
+                    <img src="{{ glide:url h="66" w="66" q="35" fm="jpg" }}" alt="Handle Type - {{ filename }}">
+                </li>
+                <!-- Indicators 1 End -->
+            {{ /assets:handles }}
+        </ol>
+        <!-- Indicators End -->
+        <!-- Carousel Inner Start -->
+        <div class="carousel-inner" role="listbox">
+            {{ assets:handles }}
+                <!-- All Slides -->
+                <div class="carousel-item  {{ if first }}active{{/if}}" alt="Handle Type - {{ filename }}"><!-- style="background-size: contain;" -->
+                    <!-- Image -->
+                    <img class="bs4-carousel-img" src="{{ glide:url fm="jpg" q="40" h="417" }}">
+                    <!-- image caption -->
+                    <div class="carousel-caption d-md-block"><!-- took out d-none -->
+                        <h3 class="woodlore-carousel-caption black bold">{{ filename }}</h3>
+                    </div>
+                </div>
+                <!-- end of All Slides -->
+            {{ /assets:handles }}
+        </div>
+        <!-- Carousel Inner End -->
+        <!-- Arrow Left Start -->
+        <a class="carousel-control-prev bs4-carousel-control carousel-control-ip carousel-control-x" href="#full-screen-thumb-btm-rel" data-slide="prev" data-color="rgba(150,150,150,0.3)">
+            <!-- Icon -->
+            <i class="fas fa-angle-left"></i>
+        </a>
+        <!-- Arrow Left End -->
+        <!-- Arrow Right Start -->
+        <a class="carousel-control-next bs4-carousel-control carousel-control-ip carousel-control-x" href="#full-screen-thumb-btm-rel" data-slide="next" data-color="rgba(150,150,150,0.3)">
+            <!-- Icon -->
+            <i class="fas fa-angle-right"></i>
+        </a>
+        <!-- Arrow Right End -->
+    </div>
+    <!-- Carousel End -->
+</div>
+<!-- Parent Div End -->

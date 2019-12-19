@@ -1,0 +1,13 @@
+title: cnc
+order: number
+fieldset: things
+template: things
+columns:
+  - title
+  - image_title
+  - photo
+  - slug
+searchable:
+  - title
+  - photo
+  - slug

@@ -1,0 +1,8 @@
+title: assembly
+order: number
+fieldset: things
+template: things
+searchable:
+  - title
+  - photo
+  - slug

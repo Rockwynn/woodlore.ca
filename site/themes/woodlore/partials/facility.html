@@ -1,0 +1,34 @@
+<section class="regular">
+	<div class="container-fluid centered">
+		<div class="block">
+		    <div class="row">
+		        <div class="col">
+					{{ assets:topimage }}
+		            <img src="{{ glide:url q="75" fm="jpg" }}" class="large-image" alt="Woodlore's 140,000 sq. ft. facility utilizes state-of-the-art equipment and automated processes."/>
+					{{ /assets:topimage }}
+		        </div>
+		    </div>
+		</div>
+		<div class="block">
+			<h4 class="orange bold">{{ title }}</h4>
+			<p>{{ top-image-caption }}</p>
+		</div>
+		<hr>
+		<div class="row">
+		    <div class="card-deck">
+				{{ collection:facility sort="number" }}
+			        <div class="card">
+						<a class="example-image-link" href="{{ link }}" width="552" height="552" fit="crop"><!-- data-lightbox="example-set" data-title="{{ image_title }} - Click on right or left half of image to navigate." -->
+					    	<img class="example-image card-img-top" src="{{ glide:photo q="75" fm="jpg" }}" width="270" height="150" fit="crop" alt="{{ title }}" />
+						</a>
+				        <div class="card-block">
+				            <h5 class="orange bold card-title">{{ title }}</h5>
+				            <p class="card-text">{{ blurb }}</p>
+							<a href="{{ link }}"><span class="dgreen bold">More Pictures</span></a>
+				        </div>
+			        </div>
+			    {{ /collection:facility }}
+		    </div>
+		</div>
+	</div>
+</section>

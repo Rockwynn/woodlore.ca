@@ -1,0 +1,31 @@
+<nav class="navbar navbar-woodlore navbar-expand-lg navbar-light bg-light navbar-redwood">
+    <div class="container">
+	        <a class="navbar-brand" href="/">
+                {{ assets:woodlorelogo }}<img src="{{ glide:url q="75" fm="jpg" }}" alt="Woodlore International Inc.">{{ /assets:woodlorelogo }}</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+	  	</button>
+     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                {{ nav from="/" max_depth="2" include_home="true" scope="tag" }}
+                    {{ if !children }}
+                        <li class="nav-item{{ if is_current }} active{{ endif }}">
+                          <a class="nav-link" href="{{ url }}">{{ title }}</a>
+                        </li>
+                    {{ else }}
+                        <li class="nav-item dropdown{{ if is_current || is_parent }} active {{ endif }}">
+                            <a href="{{ url }}" class="nav-link dropdown-toggle" id="navbarDropdown{{ id }}" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ title }}</a>
+                            <ul class="dropdown-menu" dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown{{ id }}">
+                                {{ children }}
+                                	<li{{ if is_current or is_parent }} class="active"{{ /if }}><a class="dropdown-item" href="{{ url }}">{{ title }}</a></li>
+                                    <div class="dropdown-divider"></div>
+                                {{ /children }}
+                            </ul>
+                        </li>
+                    {{ endif }}
+                {{ /nav }}
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--end of nav-->

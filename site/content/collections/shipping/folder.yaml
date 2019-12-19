@@ -1,0 +1,9 @@
+title: Shipping
+order: number
+fieldset: things
+template: things
+columns:
+  - title
+  - image_title
+  - photo
+  - slug

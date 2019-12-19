@@ -1,0 +1,47 @@
+sections:
+  main:
+    display: Main
+    fields:
+      title:
+        display: Title
+        type: text
+        width: 66
+        localizable: true
+      slug:
+        display: Slug
+        type: text
+        width: 33
+      image_title:
+        type: text
+        display: 'Image Title'
+      image_url:
+        type: text
+        display: 'Image URL'
+      slider_number:
+        type: text
+        display: 'Slider Number'
+      row_classes:
+        type: text
+        display: 'Row Classes'
+      header:
+        type: text
+        display: Header
+      header_col_classes:
+        type: text
+        display: 'Header Col Classes'
+      header_h2_classes:
+        type: text
+        display: 'header h2 classes'
+      blurb:
+        type: text
+        display: Blurb
+      blurb_col_classes:
+        type: text
+        display: 'Blurb Col Classes'
+      blurb_h2_classes:
+        type: text
+        display: 'blurb h2 classes'
+taxonomies: true
+hide: true
+title: 'Home Page Slider'
+create_title: 'Home Page Slider Fieldset'

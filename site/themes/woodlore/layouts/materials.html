@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Another awesome Statamic site">
+    <title>{{ title ensure_right=" / " }}{{ site_name }}</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600&display=swap" rel="stylesheet">
+    <!--<link rel="stylesheet" type="text/css" href="{{ theme:css src="fontawesome-all.min.css" }}">-->
+    <link rel="stylesheet" href="{{ theme:css src="bootstrap.min.css" }}">
+    <!--<link rel="stylesheet" href="{{ theme:css src="bs4-image-slideshow-min.css" }}">-->
+    <!--<link rel="stylesheet" href="{{ theme:css src="lightbox.css" }}">-->
+    <link rel="stylesheet" href="{{ theme:css }}">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico?v=1">
+</head>
+<body class="section-{{ segment_1 or "home" }}">
+    {{ partial:nav }}
+    {{ partial:breadcrumbs }}
+    {{ template_content }}
+    {{ partial:footer }}
+    <!-- jQuery -->
+    <script src="{{ theme:js src="jquery-3.4.1.min.js" }}"></script>
+    <!-- Bootstrap JS -->
+    <!--<script src="{{ theme:js src="bootstrap.min.js" }}"></script>-->
+    <!-- Touch Swipe -->
+    <!--<script src="{{ theme:js src="jquery.touchSwipe.min.js" }}"></script>-->
+    <!-- Plugin JS File -->
+    <!--<script src="{{ theme:js src="bs4-image-slideshow-min.js" }}"></script>-->
+    <!-- Theme JS -->
+    <script src="{{ theme:js }}"></script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+fields:
+  hide_from_nav:
+    type: toggle
+    display: Hide from navigation

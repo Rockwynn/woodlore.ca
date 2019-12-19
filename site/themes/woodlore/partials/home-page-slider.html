@@ -1,0 +1,79 @@
+<div class="home-hero block" style="margin-top: 0px; padding-top: 0px;">
+	<div class="row">
+		<div class="col">
+			<h3 class="dgreen"style="text-align: center;">{{ hero_sub_title }}</h3>
+
+			<picture>
+				<source srcset="{{ glide:hero_image q="75" fm="webp" w="" h="" }}"alt="Woodlore Office Furniture Manufacturing Inc" type="image/webp">
+				<source srcset="{{ glide:hero_image q="75" fm="jpg" w="" h="" }}" alt="Woodlore Office Furniture Manufacturing Inc" type="image/jpg">
+				<img src="{{ glide:hero_image q="75" fm="jpg" w="" h="" }}" alt="Woodlore Office Furniture Manufacturing Inc">
+			</picture>
+
+
+			<!--<img src="{{ glide:hero_image q="75" fm="jpg" }}" alt="Woodlore Office Furniture Manufacturing Inc"/>-->
+
+
+			<!--<img src="/assets/img/about-us-page/woodloreglass.jpg" class="large-image">-->
+		</div>
+	</div>
+</div>
+
+	<!-- full-screen-parent-simple-indicators.html - codecanyon-v2Cu3U7n-bootstrap-4-carousel-image-slideshow-and-gallery.zip - codecanyon "Bootstrap 4 Carousel - Image Slideshow and Gallery" -->
+		<!-- Carousel Start -->
+		<div id="full-screen-parent-simple-indicators" style="background-color: #fff;" class="home-page-slider carousel slide bs4-carousel bs4-full-screen-parent bs4-indicators-simple swipe_x bs4-easeOutSine thumb_scroll_x" data-ride="carousel" data-pause="hover" data-duration="1500" data-interval="5000" data-keyboard="false" data-wrap="true">
+
+			<!-- Indicators Start -->
+			<ol class="carousel-indicators carousel-indicators-ip carousel-indicators-bottom-center" data-bgcolor="transparent" data-color="#ff6600">
+				<!-- Indicators 1 -->
+				<li data-target="#full-screen-parent-simple-indicators" data-slide-to="0"></li>
+				<!-- Indicators 2 -->
+				<li data-target="#full-screen-parent-simple-indicators" data-slide-to="1"></li>
+				<!-- Indicators 3 -->
+				<li data-target="#full-screen-parent-simple-indicators" data-slide-to="2"></li>
+				<!-- Indicators 4 -->
+				<li data-target="#full-screen-parent-simple-indicators" data-slide-to="3"></li>
+				<!-- Indicators 5 -->
+				<li data-target="#full-screen-parent-simple-indicators" data-slide-to="4"></li>
+				<!-- Indicators 6 -->
+				<li data-target="#full-screen-parent-simple-indicators" data-slide-to="5"></li>
+				<!-- Indicators 7 -->
+				<li data-target="#full-screen-parent-simple-indicators" data-slide-to="6"></li>
+				<!-- Indicators 8 -->
+				<li style="display:none;" data-target="#full-screen-parent-simple-indicators" data-slide-to="6"></li>
+				<!-- Indicators 9 -->
+			</ol>
+			<!-- Indicators End -->
+			<!-- Carousel Inner Start -->
+			<div class="carousel-inner" role="listbox">
+				{{ collection:home-page-slider }}
+				<!-- Slide Start -->
+				<div class="carousel-item bs-one-hundred animated {{ div_class }}" alt="{{ alt }}">
+					<!-- Image -->
+					<!--<img src="{{ image_url }}" alt="{{ alt }}" class="bs4-carousel-img">-->
+					<img src="{{ glide:image_url q="75" fm="jpg" }}" alt="{{ title }}" class="bs4-carousel-img">
+				<div class=" card-block row-class {{ row_classes }}">
+					<div class="header-col-class {{ header_col_classes }}"><h2 class="animated {{ header_h2_classes }}">{{ header }}</h2>
+					</div>
+					<div class="blurb-col-class {{ blurb_col_classes }}"><h2 class="animated {{ blurb_h2_classes }}">{{ blurb }}</h2>
+					</div>
+				</div>
+
+				</div>
+					{{ /collection:home-page-slider }}
+				<!-- Slide End -->
+			</div>
+			<!-- Carousel Inner End -->
+			<!-- Arrow Left Start -->
+			<a class="carousel-control-prev bs4-carousel-control carousel-control-ip carousel-control-x" href="#full-screen-parent-simple-indicators" data-slide="prev" data-color="rgba(150,150,150,0.3)">
+				<!-- Icon -->
+				<i class="fas fa-angle-left"></i>
+			</a>
+			<!-- Arrow Left End -->
+			<!-- Arrow Right Start -->
+			<a class="carousel-control-next bs4-carousel-control carousel-control-ip carousel-control-x" href="#full-screen-parent-simple-indicators" data-slide="next" data-color="rgba(150,150,150,0.3)">
+				<!-- Icon -->
+				<i class="fas fa-angle-right"></i>
+			</a>
+			<!-- Arrow Right End -->
+		</div>
+		<!-- Carousel End -->

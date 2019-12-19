@@ -1,0 +1,46 @@
+<section class="regular">
+    <div class="content">
+        <div class="block">
+            <div class="row">
+                    <div class="col">
+                        <!--<img src="{{ glide:url fm="jpg" }}" class="large-image"alt="Woodlore Sitemap">-->
+                        <img src="/assets/img/sitemap-page/sitemap1.jpg?fm=jpg" class="large-image" alt="Woodlore Sitemap">
+                    </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="regular">
+    <div class="sitemap-html container-fluid">
+
+            <!--<a class="navbar-brand" href="/">
+                {{ assets:woodlorelogo }}<img src="{{ glide:url q="75" fm="jpg" }}" alt="Woodlore International Inc.">{{ /assets:woodlorelogo }}</a>-->
+        <!--<button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span ></span>
+        </button>-->
+<nav>
+     <div>
+        <ul>
+            {{ nav from="/" max_depth="2" include_home="true" scope="tag" }}
+                {{ if !children }}
+                    <li class="dark" {{ if is_current }} active{{ endif }}">
+                      <a href="{{ url }}">{{ title }}</a>
+                    </li>
+                {{ else }}
+                    <li class="dark" {{ if is_current || is_parent }} active {{ endif }}">
+                        <a {{ if id === "8696d7b6-641c-48bc-86d0-b15187d5112c" || id === "d8f4a89a-fe62-42ac-a168-619eba594162" || id === "c549ddad-d9e9-4e3c-81a3-f004d71ab061" }}href="{{ url }}" {{ else }} href="#" style="text-decoration:none;"{{ /if }}>{{ title }}</a><!-- class="nav-link dropdown-toggle"-->
+                        <!--<a href="{{ url }}" id="navbarDropdown{{ id }}" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ title }}</a>-->
+                        <ul "dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown{{ id }}">
+                            {{ children }}
+                                <li class="list-menu"{{ if is_current or is_parent }} class="active"{{ /if }}><a  href="{{ url }}">{{ title }}</a></li>
+                                <div ></div>
+                            {{ /children }}
+                        </ul>
+                    </li>
+                {{ endif }}
+            {{ /nav }}
+        </ul>
+    </div>
+</nav>
+<!--end of nav-->
+</div></section>
