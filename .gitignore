@@ -6,4 +6,6 @@ local/cache/*
 local/storage/*
 local/temp/*
 installer.php
+site/themes/woodlore/yarn.lock
 yarn.lock
+statamic/composer.lock
