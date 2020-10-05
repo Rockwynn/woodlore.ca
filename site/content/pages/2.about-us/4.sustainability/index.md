@@ -46,7 +46,7 @@ carb:
 </div>
 <div class="block">
     <h5 class="orange bold">Woodlore</h5>
-    <p>Our board is purchased as FSC® mix, laminates manufactured from well managed forests. Woodlore’s Chain of Custody certification number is #SGSNA-COC-006970.</p>
+    <p>Our board is purchased as FSC® mix, laminates manufactured from well managed forests. Woodlore’s Chain of Custody license number is FSC-C103500.</p>
 </div>
 
 
