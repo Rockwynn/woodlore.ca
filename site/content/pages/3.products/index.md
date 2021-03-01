@@ -1,7 +1,6 @@
 ---
 title: Products
 nav-title: Products
-custom_url: view/products
 fieldset: default
 template: about
 id: 3c3ce3db-07bb-45e4-9239-831bd989d9e8
